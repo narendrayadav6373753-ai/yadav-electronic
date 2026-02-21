@@ -1,127 +1,66 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Yadav Electronics - Rampur</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<section id="products">
+  <h2>Our Products</h2>
+  <div class="product-container">
+
+    <div class="product-card">
+      <img src="tv26.jpg" alt="Samsung 26 inch LED">
+      <h3>Samsung 26" LED TV</h3>
+      <p>Price: ₹5,800</p>
+      <a href="https://wa.me/917817849082" target="_blank">Order on WhatsApp</a>
+    </div>
+
+    <div class="product-card">
+      <img src="tv32.jpg" alt="Samsung 32 inch LED">
+      <h3>Samsung 32" LED TV</h3>
+      <p>Price: ₹8,800</p>
+      <a href="https://wa.me/917817849082" target="_blank">Order on WhatsApp</a>
+    </div>
+
+    <div class="product-card">
+      <img src="tv43.jpg" alt="Samsung 43 inch LED">
+      <h3>Samsung 43" LED TV</h3>
+      <p>Price: ₹14,500</p>
+      <a href="https://wa.me/917817849082" target="_blank">Order on WhatsApp</a>
+    </div>
+
+    <div class="product-card">
+      <img src="fridge.jpg" alt="Whirlpool 195L Refrigerator">
+      <h3>Whirlpool 195L Refrigerator</h3>
+      <p>Model: 72882</p>
+      <p>Price: ₹14,850</p>
+      <a href="https://wa.me/917817849082" target="_blank">Order on WhatsApp</a>
+    </div>
+
+  </div>
+</section>
 <style>
-
-body{
-font-family: Arial;
-margin:0;
-padding:0;
-background:#f4f9ff;
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-header{
-background:linear-gradient(to right, green, blue);
-color:white;
-padding:20px;
-text-align:center;
+.product-card {
+  background: #f5f5f5;
+  padding: 15px;
+  border-radius: 10px;
+  width: 250px;
+  text-align: center;
 }
 
-.container{
-padding:20px;
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 
-.product{
-background:white;
-padding:15px;
-margin-bottom:20px;
-border-radius:10px;
-box-shadow:0 4px 8px rgba(0,0,0,0.1);
+.product-card a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 15px;
+  background: green;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
 }
-
-.product img{
-width:100%;
-border-radius:10px;
-}
-
-.price{
-color:green;
-font-size:20px;
-font-weight:bold;
-}
-
-button{
-background:green;
-color:white;
-padding:10px 15px;
-border:none;
-border-radius:5px;
-cursor:pointer;
-margin-top:10px;
-}
-
-button:hover{
-background:blue;
-}
-
-footer{
-background:#222;
-color:white;
-text-align:center;
-padding:15px;
-}
-
-.contact-btn{
-display:inline-block;
-margin:5px;
-text-decoration:none;
-background:blue;
-color:white;
-padding:10px 15px;
-border-radius:5px;
-}
-
-</style>
-</head>
-
-<body>
-
-<header>
-<h1>Yadav Electronics</h1>
-<p>Owner: Nitin Yadav</p>
-<p>📞 7817849082</p>
-<p>GST No: 09KGRPS8528C1ZJ</p>
-</header>
-
-<div class="container">
-
-<h2>Our Products</h2>
-
-<div class="product">
-<img src="whirlpool1.jpg">
-<h3>Whirlpool Model 72882</h3>
-<p class="price">₹14800</p>
-<a href="https://wa.me/917817849082?text=I%20want%20to%20order%20Whirlpool%2072882" target="_blank">
-<button>Order on WhatsApp</button>
-</a>
-</div>
-
-<div class="product">
-<img src="whirlpool2.jpg">
-<h3>Whirlpool Model 72577</h3>
-<p class="price">₹12350</p>
-<a href="https://wa.me/917817849082?text=I%20want%20to%20order%20Whirlpool%2072577" target="_blank">
-<button>Order on WhatsApp</button>
-</a>
-</div>
-
-<h2>Contact Us</h2>
-
-<p>📍 Holi Bala Mandir, Ajeetpur (Rampur)</p>
-
-<a class="contact-btn" href="tel:7817849082">Call Now</a>
-
-<a class="contact-btn" href="https://wa.me/917817849082" target="_blank">
-WhatsApp
-</a>
-
-</div>
-
-<footer>
-© 2026 Yadav Electronics | All Rights Reserved
-</footer>
-
-</body>
-</html>
+  </style>
