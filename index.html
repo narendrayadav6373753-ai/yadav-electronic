@@ -1,396 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Yadav Electronics | Electronics Shop in Rampur</title>
-
-<meta name="description" content="Yadav Electronics in Ajeetpur Rampur offers mobile repair, electronics repair, accessories and electronic products at best price. Call +91 7817849082">
-
-<style>
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family: Arial, sans-serif;
-}
-
-body{
-  line-height:1.6;
-  background:#f5f7fa;
-  color:#333;
-}
-
-header{
-  background:linear-gradient(135deg,#0f9b0f,#005bea);
-  color:white;
-  padding:20px;
-  text-align:center;
-}
-
-header h1{
-  font-size:32px;
-}
-
-nav{
-  display:flex;
-  justify-content:center;
-  flex-wrap:wrap;
-  background:#111;
-}
-
-nav a{
-  color:white;
-  padding:15px;
-  text-decoration:none;
-  font-weight:bold;
-}
-
-nav a:hover{
-  background:#005bea;
-}
-
-.hero{
-  background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
-  url('https://images.unsplash.com/photo-1510557880182-3cce0c0b6f7f');
-  background-size:cover;
-  background-position:center;
-  color:white;
-  text-align:center;
-  padding:80px 20px;
-}
-
-.hero h2{
-  font-size:36px;
-  margin-bottom:20px;
-}
-
-.btn{
-  display:inline-block;
-  margin:10px;
-  padding:12px 25px;
-  background:#0f9b0f;
-  color:white;
-  text-decoration:none;
-  border-radius:5px;
-  font-weight:bold;
-}
-
-.btn-blue{
-  background:#005bea;
-}
-
-section{
-  padding:60px 20px;
-  text-align:center;
-}
-
-.section-title{
-  font-size:28px;
-  margin-bottom:30px;
-  color:#005bea;
-}
-
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:20px;
-}
-
-.card{
-  background:white;
-  padding:20px;
-  border-radius:10px;
-  box-shadow:0 4px 10px rgba(0,0,0,0.1);
-}
-
-.card img{
-  width:100%;
-  height:180px;
-  object-fit:cover;
-  border-radius:8px;
-}
-
-footer{
-  background:#111;
-  color:white;
-  padding:20px;
-  text-align:center;
-}
-
-/* Floating Buttons */
-.whatsapp-float{
-  position:fixed;
-  bottom:20px;
-  right:20px;
-  background:#25D366;
-  color:white;
-  padding:15px;
-  border-radius:50%;
-  font-size:22px;
-  text-decoration:none;
-}
-
-.call-float{
-  position:fixed;
-  bottom:90px;
-  right:20px;
-  background:#005bea;
-  color:white;
-  padding:15px;
-  border-radius:50%;
-  font-size:20px;
-  text-decoration:none;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Yadav Electronics Rampur - Mobile Repair, Electronics Sales & Service">
+    <title>Yadav Electronics - Rampur, UP</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Roboto', sans-serif; line-height: 1.6; color: #343A40; background: #F8F9FA; }
+        h1, h2, h3 { font-family: 'Poppins', sans-serif; color: #007BFF; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        header { background: linear-gradient(135deg, #007BFF, #28A745); color: white; padding: 1rem 0; position: fixed; width: 100%; top: 0; z-index: 1000; }
+        nav ul { list-style: none; display: flex; justify-content: center; }
+        nav li { margin: 0 1rem; }
+        nav a { color: white; text-decoration: none; font-weight: bold; }
+        section { padding: 80px 0; min-height: 100vh; }
+        #home { background: linear-gradient(rgba(0,123,255,0.8), rgba(40,167,69,0.8)), url('hero-bg.jpg'); background-size: cover; color: white; text-align: center; }
+        .hero h1 { font-size: 3rem; margin-bottom: 1rem; }
+        .cta-btn { background: #28A745; color: white; padding: 15px 30px; border: none; border-radius: 50px; font-size: 1.2rem; margin: 10px; text-decoration: none; display: inline-block; transition: transform 0.3s; }
+        .cta-btn:hover { transform: scale(1.05); }
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; text-align: center; }
+        .feature { background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        .whatsapp-float { position: fixed; bottom: 20px; right: 20px; background: #28A745; color: white; width: 60px; height: 60px; border-radius: 50%; text-align: center; line-height: 60px; font-size: 2rem; z-index: 1000; box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+        .call-float { position: fixed; bottom: 100px; right: 20px; background: #007BFF; color: white; padding: 15px 20px; border-radius: 50px; text-decoration: none; z-index: 1000; box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+        footer { background: #343A40; color: white; text-align: center; padding: 2rem; }
+        @media (max-width: 768px) { .hero h1 { font-size: 2rem; } nav ul { flex-direction: column; } }
+        iframe { width: 100%; height: 400px; border: 0; border-radius: 10px; }
+    </style>
 </head>
-
 <body>
-<nav>
-<a href="#home">Home</a>
-<a href="#about">About</a>
-<a href="#services">Services</a>
-<a href="#products">Products</a>
-<a href="#contact">Contact</a>
-</nav>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<section class="hero" id="home">
-<h2>Trusted Electronics Shop in Rampur</h2>
-<p>Quality Products | Reliable Repair | Affordable Prices</p>
-<a href="tel:+917817849082" class="btn">Call Now</a>
-<a href="https://wa.me/917817849082" class="btn btn-blue">WhatsApp</a>
-</section>
+    <section id="home">
+        <div class="container">
+            <h1>Expert Electronics Repair & Sales</h1>
+            <p>Your Trusted Shop in Rampur, UP</p>
+            <a href="#contact" class="cta-btn">Call Now</a>
+            <a href="https://wa.me/917817849082?text=Hi, interested in services!" class="cta-btn" target="_blank">WhatsApp</a>
+        </div>
+    </section>
 
-<section id="about">
-<h2 class="section-title">About Us</h2>
-<p>Yadav Electronics is a trusted electronics shop in Ajeetpur Rampur. We provide quality products and expert repair services. Our focus is customer satisfaction, fair pricing and reliable service.</p>
-<p>With years of experience, we serve local customers with honesty and trust.</p>
-</section>
+    <section id="about" class="container">
+        <h2>About Us</h2>
+        <p>Established in Rampur, Yadav Electronics specializes in electronics repair and sales. We focus on customer satisfaction with skilled service and quality products like stabilizers, chargers.[web:1][web:5]</p>
+        <div class="features">
+            <div class="feature"><h3>Experience</h3><p>10+ years in Rampur.</p></div>
+            <div class="feature"><h3>Trust</h3><p>Genuine parts only.</p></div>
+            <div class="feature"><h3>Satisfaction</h3><p>Happy customers first.</p></div>
+        </div>
+    </section>
 
-<section id="services">
-<h2 class="section-title">Our Services</h2>
-<div class="grid">
-<div class="card">
-<img src="https://images.unsplash.com/photo-1580910051074-3eb694886505">
-<h3>Mobile Repair</h3>
-<p>Screen replacement, battery change, software issues and all mobile repairs.</p>
-</div>
+    <section id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Mobile repair (screen, battery, charging)[web:4]</li>
+                <li>Electronics repair (appliances, logic cards)[web:1]</li>
+                <li>Accessories sales (chargers, headphones)</li>
+                <li>E-rickshaw chargers, stabilizers[web:1]</li>
+            </ul>
+        </div>
+    </section>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1581092334497-2c2e06d1a57a">
-<h3>Electronics Repair</h3>
-<p>TV, fridge, small appliances repair services at affordable cost.</p>
-</div>
+    <section id="products">
+        <div class="container">
+            <h2>Products</h2>
+            <ul>
+                <li>Mobile phones</li>
+                <li>Chargers & headphones</li>
+                <li>Electronic accessories</li>
+            </ul>
+            <!-- Add product grid images here -->
+        </div>
+    </section>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8">
-<h3>Accessories Sales</h3>
-<p>Chargers, headphones, cables, covers and electronic accessories.</p>
-</div>
-</div>
-</section>
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Ajeetpur Holi Bala Mandir, Rampur, Uttar Pradesh, India[web:11]</p>
+            <p>Phone: <a href="tel:+917817849082">+91 7817849082</a></p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1400.123456789!2d79.44!3d28.80!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399f000000000001%3A0x0000000000000000!2sAjeetpur%20Holi%20Bala%20Mandir%2C%20Rampur!5e0!3m2!1sen!2sin!4v1730000000000!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+            <form style="max-width:500px;margin-top:2rem;">
+                <input type="text" placeholder="Name" style="width:100%;padding:10px;margin:5px 0;border:1px solid #ddd;border-radius:5px;">
+                <input type="tel" placeholder="Phone" style="width:100%;padding:10px;margin:5px 0;border:1px solid #ddd;border-radius:5px;">
+                <textarea placeholder="Message" style="width:100%;padding:10px;margin:5px 0;border:1px solid #ddd;border-radius:5px;height:100px;"></textarea>
+                <button type="submit" class="cta-btn" style="width:100%;">Send</button>
+            </form>
+        </div>
+    </section>
 
-<section id="products">
-<h2 class="section-title">Our Products</h2>
-<div class="grid">
+    <a href="https://wa.me/917817849082?text=Hello from website!" class="whatsapp-float" target="_blank">💬</a>
+    <a href="tel:+917817849082" class="call-float">Call Now</a>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9">
-<h3>Mobile Phones</h3>
-<p>Latest smartphones at best price.</p>
-</div>
+    <footer>
+        <p>&copy; 2026 Yadav Electronics. All rights reserved. | Rampur, UP</p>
+    </footer>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1585386959984-a415522316d3">
-<h3>Chargers & Headphones</h3>
-<p>Original quality accessories available.</p>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1580894894513-541e068a3e2b">
-<h3>Electronic Accessories</h3>
-<p>All types of useful electronic items.</p>
-</div>
-
-</div>
-</section>
-
-<section id="contact">
-<h2 class="section-title">Contact Us</h2>
-<p>📍 Ajeetpur Holi Bala Mandir, Rampur, Uttar Pradesh</p>
-<p>📞 +91 7817849082</p>
-
-<iframe 
-src="https://www.google.com/maps?q=Ajeetpur%20Holi%20Bala%20Mandir%20Rampur&output=embed"
-width="100%" height="250" style="border:0;"></iframe>
-
-<br><br>
-
-<form>
-<input type="text" placeholder="Your Name" required style="padding:10px;width:80%;max-width:400px;"><br><br>
-<input type="email" placeholder="Your Email" required style="padding:10px;width:80%;max-width:400px;"><br><br>
-<textarea placeholder="Your Message" required style="padding:10px;width:80%;max-width:400px;height:100px;"></textarea><br><br>
-<button type="submit" class="btn">Send Message</button>
-</form>
-</section>
-
-<footer>
-© 2026 Yadav Electronics | All Rights Reserved
-</footer>
-
-<a href="https://wa.me/917817849082" class="whatsapp-float">💬</a>
-<a href="tel:+917817849082" class="call-float">📞</a>
-
+    <script>
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault(); document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
 </body>
- </html> 
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Yadav Electronics</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial;
-      background: #f4f4f4;
-    }
-
-    header {
-      background: linear-gradient(to right, green, blue);
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-
-    nav {
-      background: #111;
-      text-align: center;
-      padding: 10px;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 10px;
-      font-weight: bold;
-    }
-
-    section {
-      padding: 30px;
-      text-align: center;
-    }
-
-    .product-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-
-    .product-card {
-      background: white;
-      width: 250px;
-      padding: 15px;
-      border-radius: 10px;
-      box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
-    }
-
-    .product-card img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 8px;
-    }
-
-    .product-card h3 {
-      margin: 10px 0;
-    }
-
-    .product-card a {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 8px 15px;
-      background: green;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-    }
-
-    footer {
-      background: #111;
-      color: white;
-      padding: 15px;
-      text-align: center;
-    }
-  </style>
-</head>
-
-<body>
-
-<header>
-  <h1>Yadav Electronics</h1>
-  <p>Owner: Nitin Yadav | 📞 7817849082</p>
-  <p>Holi Bala Mandir, Ajeetpur, Rampur</p>
-</header>
-
-<nav>
-  <a href="#about">About</a>
-  <a href="#products">Products</a>
-  <a href="#contact">Contact</a>
-</nav>
-
-<section id="about">
-  <h2>About Us</h2>
-  <p>Welcome to Yadav Electronics. We provide quality electronic products at affordable prices with best customer service.</p>
-</section>
-
-<section id="products">
-  <h2>Our Products</h2>
-
-  <div class="product-container">
-
-    <div class="product-card">
-      <img src="tv26.jpg">
-      <h3>Samsung 26" LED TV</h3>
-      <p>Price: ₹5,800</p>
-      <a href="https://wa.me/917817849082">Order on WhatsApp</a>
-    </div>
-
-    <div class="product-card">
-      <img src="tv32.jpg">
-      <h3>Samsung 32" LED TV</h3>
-      <p>Price: ₹8,800</p>
-      <a href="https://wa.me/917817849082">Order on WhatsApp</a>
-    </div>
-
-    <div class="product-card">
-      <img src="tv43.jpg">
-      <h3>Samsung 43" LED TV</h3>
-      <p>Price: ₹14,500</p>
-      <a href="https://wa.me/917817849082">Order on WhatsApp</a>
-    </div>
-
-    <div class="product-card">
-      <img src="fridge.jpg">
-      <h3>Whirlpool 195L Refrigerator</h3>
-      <p>Model: 72882</p>
-      <p>Price: ₹14,850</p>
-      <a href="https://wa.me/917817849082">Order on WhatsApp</a>
-    </div>
-
-  </div>
-</section>
-
-<section id="contact">
-  <h2>Contact Us</h2>
-  <p>📞 Phone: 7817849082</p>
-  <p>GST: 09KGRPS8528C1ZJ</p>
-</section>
-
-<footer>
-  © 2026 Yadav Electronics | All Rights Reserved
-</footer>
-
-</body>
-</html>
+                  </html>
