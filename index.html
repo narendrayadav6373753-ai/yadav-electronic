@@ -1,66 +1,152 @@
+ 
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Yadav Electronics</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial;
+      background: #f4f4f4;
+    }
+
+    header {
+      background: linear-gradient(to right, green, blue);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background: #111;
+      text-align: center;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 10px;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 30px;
+      text-align: center;
+    }
+
+    .product-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .product-card {
+      background: white;
+      width: 250px;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .product-card h3 {
+      margin: 10px 0;
+    }
+
+    .product-card a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 15px;
+      background: green;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    footer {
+      background: #111;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Yadav Electronics</h1>
+  <p>Owner: Nitin Yadav | 📞 7817849082</p>
+  <p>Holi Bala Mandir, Ajeetpur, Rampur</p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#products">Products</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+  <h2>About Us</h2>
+  <p>Welcome to Yadav Electronics. We provide quality electronic products at affordable prices with best customer service.</p>
+</section>
+
 <section id="products">
   <h2>Our Products</h2>
+
   <div class="product-container">
 
     <div class="product-card">
-      <img src="tv26.jpg" alt="Samsung 26 inch LED">
+      <img src="tv26.jpg">
       <h3>Samsung 26" LED TV</h3>
       <p>Price: ₹5,800</p>
-      <a href="https://wa.me/917817849082" target="_blank">Order on WhatsApp</a>
+      <a href="https://wa.me/917817849082">Order on WhatsApp</a>
     </div>
 
     <div class="product-card">
-      <img src="tv32.jpg" alt="Samsung 32 inch LED">
+      <img src="tv32.jpg">
       <h3>Samsung 32" LED TV</h3>
       <p>Price: ₹8,800</p>
-      <a href="https://wa.me/917817849082" target="_blank">Order on WhatsApp</a>
+      <a href="https://wa.me/917817849082">Order on WhatsApp</a>
     </div>
 
     <div class="product-card">
-      <img src="tv43.jpg" alt="Samsung 43 inch LED">
+      <img src="tv43.jpg">
       <h3>Samsung 43" LED TV</h3>
       <p>Price: ₹14,500</p>
-      <a href="https://wa.me/917817849082" target="_blank">Order on WhatsApp</a>
+      <a href="https://wa.me/917817849082">Order on WhatsApp</a>
     </div>
 
     <div class="product-card">
-      <img src="fridge.jpg" alt="Whirlpool 195L Refrigerator">
+      <img src="fridge.jpg">
       <h3>Whirlpool 195L Refrigerator</h3>
       <p>Model: 72882</p>
       <p>Price: ₹14,850</p>
-      <a href="https://wa.me/917817849082" target="_blank">Order on WhatsApp</a>
+      <a href="https://wa.me/917817849082">Order on WhatsApp</a>
     </div>
 
   </div>
 </section>
-<style>
-.product-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
 
-.product-card {
-  background: #f5f5f5;
-  padding: 15px;
-  border-radius: 10px;
-  width: 250px;
-  text-align: center;
-}
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>📞 Phone: 7817849082</p>
+  <p>GST: 09KGRPS8528C1ZJ</p>
+</section>
 
-.product-card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
+<footer>
+  © 2026 Yadav Electronics | All Rights Reserved
+</footer>
 
-.product-card a {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 8px 15px;
-  background: green;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-}
-  </style>
+</body>
+</html>
