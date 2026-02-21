@@ -1,196 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Yadav Electronics Rampur - Refrigerator Washing Machine LED Cooler Iron Induction Sales & Repair">
-    <title>Yadav Electronics - Rampur Appliances</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Roboto', sans-serif; line-height: 1.6; color: #343A40; background: #F8F9FA; }
-        h1, h2, h3 { font-family: 'Poppins', sans-serif; color: #007BFF; }
-        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-        header { background: linear-gradient(135deg, #007BFF, #28A745); color: white; padding: 1rem 0; position: fixed; width: 100%; top: 0; z-index: 1000; }
-        nav ul { list-style: none; display: flex; justify-content: center; flex-wrap: wrap; }
-        nav li { margin: 0.5rem 1rem; }
-        nav a { color: white; text-decoration: none; font-weight: bold; }
-        section { padding: 80px 0; }
-        #home { background: linear-gradient(rgba(0,123,255,0.9), rgba(40,167,69,0.9)), url('appliances-hero.jpg'); background-size: cover; color: white; text-align: center; }
-        .hero h1 { font-size: 3rem; margin-bottom: 1rem; }
-        .cta-btn { background: #28A745; color: white; padding: 15px 30px; border: none; border-radius: 50px; font-size: 1.2rem; margin: 10px; text-decoration: none; display: inline-block; transition: transform 0.3s; }
-        .cta-btn:hover { transform: scale(1.05); }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
-        .card { background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); text-align: center; }
-        .whatsapp-float { position: fixed; bottom: 20px; right: 20px; background: #28A745; color: white; width: 60px; height: 60px; border-radius: 50%; text-align: center; line-height: 60px; font-size: 2rem; z-index: 1000; box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
-        .call-float { position: fixed; bottom: 100px; right: 20px; background: #007BFF; color: white; padding: 15px 20px; border-radius: 50px; text-decoration: none; z-index: 1000; box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
-        footer { background: #343A40; color: white; text-align: center; padding: 2rem; }
-        iframe { width: 100%; height: 400px; border: 0; border-radius: 10px; }
-        @media (max-width: 768px) { .hero h1 { font-size: 2rem; } nav ul { flex-direction: column; } }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yadav Electronics | Home Appliances Store in Rampur</title>
+
+<meta name="description" content="Buy Refrigerator, Washing Machine, LED TV, Cooler, Mixer Juicer, Press and Induction at best price in Rampur. Call +91 7817849082">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+background:#f4f7fb;
+color:#333;
+}
+
+header{
+background:linear-gradient(135deg,#009933,#0066cc);
+color:white;
+padding:25px;
+text-align:center;
+}
+
+header h1{
+font-size:32px;
+}
+
+nav{
+background:#111;
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+nav a{
+color:white;
+padding:15px;
+text-decoration:none;
+font-weight:600;
+}
+
+nav a:hover{
+background:#0066cc;
+}
+
+.hero{
+background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+url('https://images.unsplash.com/photo-1586201375761-83865001e31c');
+background-size:cover;
+background-position:center;
+color:white;
+text-align:center;
+padding:90px 20px;
+}
+
+.hero h2{
+font-size:40px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:18px;
+margin-bottom:25px;
+}
+
+.btn{
+display:inline-block;
+padding:12px 25px;
+margin:8px;
+background:#009933;
+color:white;
+text-decoration:none;
+border-radius:5px;
+font-weight:bold;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#0066cc;
+}
+
+section{
+padding:60px 20px;
+text-align:center;
+}
+
+.section-title{
+font-size:30px;
+margin-bottom:40px;
+color:#0066cc;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+overflow:hidden;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.card h3{
+padding:15px 10px 5px;
+}
+
+.card p{
+padding-bottom:15px;
+}
+
+.badge{
+background:#009933;
+color:white;
+padding:5px 10px;
+position:absolute;
+margin:10px;
+border-radius:20px;
+font-size:12px;
+}
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+/* Floating Buttons */
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px;
+border-radius:50%;
+font-size:22px;
+text-decoration:none;
+}
+
+.call{
+position:fixed;
+bottom:90px;
+right:20px;
+background:#0066cc;
+color:white;
+padding:15px;
+border-radius:50%;
+font-size:20px;
+text-decoration:none;
+}
+</style>
 </head>
+
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section id="home">
-        <div class="container">
-            <h1>Premium Home Appliances</h1>
-            <p>Sales & Repair: Refrigerator, Washing Machine, LED, Cooler, Press, Induction. Rampur's Trusted Shop.</p>
-            <a href="#contact" class="cta-btn">Call Now</a>
-            <a href="https://wa.me/917817849082?text=Hi, appliances query!" class="cta-btn" target="_blank">WhatsApp</a>
-        </div>
-    </section>
+<header>
+<h1>Yadav Electronics</h1>
+<p>Ajeetpur Holi Bala Mandir, Rampur, Uttar Pradesh</p>
+<p>📞 +91 7817849082</p>
+</header>
 
-    <section id="about" class="container">
-        <h2>About Yadav Electronics</h2>
-        <p>Your local expert in Rampur for home appliances sales and repair. Quality products and fast service for refrigerator, washing machine, LED TV, cooler, iron, induction.[web:21]</p>
-        <div class="grid">
-            <div class="card"><h3>Quality Products</h3><p>Genuine appliances at best prices.</p></div>
-            <div class="card"><h3>Expert Repair</h3><p>Skilled technicians, same-day fixes.[web:22]</p></div>
-            <div class="card"><h3>Local Trust</h3><p>Serving Rampur for years.</p></div>
-        </div>
-    </section>
+<nav>
+<a href="#home">Home</a>
+<a href="#products">Products</a>
+<a href="#contact">Contact</a>
+</nav>
 
-    <section id="services">
-        <div class="container">
-            <h2>Repair Services</h2>
-            <ul style="list-style: none;">
-                <li>• Refrigerator: Cooling, gas charging[web:22]</li>
-                <li>• Washing Machine: Spin, leakage[web:24]</li>
-                <li>• LED TV: Display, panel issues</li>
-                <li>• Cooler: Fan, water problems</li>
-                <li>• Press/Iron: Heating faults</li>
-                <li>• Induction: Power, sensor repair</li>
-            </ul>
-        </div>
-    </section>
-    <section id="products">
-    <div class="container">
-        <h2>Our Products & Prices</h2>
-        <div class="grid">
-            <div class="card">
-                <img src="refrigerator.jpg" alt="Refrigerator" style="width:100%;border-radius:10px;height:200px;object-fit:cover;">
-                <h3>Refrigerator</h3><p>₹9,500+</p>
-            </div>
-            <div class="card">
-                <img src="washing-machine.jpg" alt="Washing Machine" style="width:100%;border-radius:10px;height:200px;object-fit:cover;">
-                <h3>Washing Machine</h3><p>₹11,500+</p>
-            </div>
-            <div class="card">
-                <img src="led-tv.jpg" alt="LED TV" style="width:100%;border-radius:10px;height:200px;object-fit:cover;">
-                <h3>LED TV</h3><p>₹12,000+</p>
-            </div>
-            <div class="card">
-                <img src="cooler.jpg" alt="Cooler" style="width:100%;border-radius:10px;height:200px;object-fit:cover;">
-                <h3>Cooler</h3><p>₹4,000+</p>
-            </div>
-            <div class="card">
-                <img src="iron.jpg" alt="Iron Press" style="width:100%;border-radius:10px;height:200px;object-fit:cover;">
-                <h3>Press (Iron)</h3><p>₹550+</p>
-            </div>
-            <div class="card">
-                <img src="induction.jpg" alt="Induction" style="width:100%;border-radius:10px;height:200px;object-fit:cover;">
-                <h3>Induction</h3><p>₹2,000+</p>
-            </div>
-        </div>
-        <h3 style="text-align:center;margin:3rem 0 1rem;">Detailed Price List</h3>
-        <table style="width:100%;border-collapse:collapse;margin:2rem 0;background:white;box-shadow:0 5px 15px rgba(0,0,0,0.1);border-radius:10px;overflow:hidden;">
-            <thead>
-                <tr style="background:#007BFF;color:white;">
-                    <th style="padding:15px;text-align:left;">Product</th>
-                    <th style="padding:15px;">Sales Price (₹)</th>
-                    <th style="padding:15px;">Repair Price (₹)</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr style="border-bottom:1px solid #ddd;">
-                    <td style="padding:15px;">Refrigerator</td>
-                    <td style="padding:15px;">9,500 onwards</td>
-                    <td style="padding:15px;">500-2,000</td>
-                </tr>
-                <tr style="border-bottom:1px solid #ddd;">
-                    <td style="padding:15px;">Washing Machine</td>
-                    <td style="padding:15px;">11,500 onwards</td>
-                    <td style="padding:15px;">400-1,500</td>
-                </tr>
-                <tr style="border-bottom:1px solid #ddd;">
-                    <td style="padding:15px;">LED TV</td>
-                    <td style="padding:15px;">12,000 onwards</td>
-                    <td style="padding:15px;">800-3,000</td>
-                </tr>
-                <tr style="border-bottom:1px solid #ddd;">
-                    <td style="padding:15px;">Cooler</td>
-                    <td style="padding:15px;">4,000 onwards</td>
-                    <td style="padding:15px;">300-800</td>
-                </tr>
-                <tr style="border-bottom:1px solid #ddd;">
-                    <td style="padding:15px;">Press (Iron)</td>
-                    <td style="padding:15px;">550 onwards</td>
-                    <td style="padding:15px;">200-500</td>
-                </tr>
-                <tr>
-                    <td style="padding:15px;">Induction</td>
-                    <td style="padding:15px;">2,000 onwards</td>
-                    <td style="padding:15px;">300-700</td>
-                </tr>
-            </tbody>
-        </table>
-        <p style="text-align:center;color:#28A745;font-weight:bold;">*Prices may vary. Call/WhatsApp for latest offers!</p>
-    </div>
+<section class="hero" id="home">
+<h2>Trusted Home Appliances Store in Rampur</h2>
+<p>Best Prices | Genuine Products | Local Trusted Shop</p>
+<a href="tel:+917817849082" class="btn">Call Now</a>
+<a href="https://wa.me/917817849082" class="btn">WhatsApp</a>
 </section>
 
-    <section id="products">
-        <div class="container">
-            <h2>Our Products</h2>
-            <div class="grid">
-                <div class="card">Refrigerator<img src="refrigerator.jpg" alt="Refrigerator" style="width:100%;border-radius:10px;"></div>
-                <div class="card">Washing Machine<img src="washing-machine.jpg" alt="Washing Machine" style="width:100%;border-radius:10px;"></div>
-                <div class="card">LED TV<img src="led-tv.jpg" alt="LED TV" style="width:100%;border-radius:10px;"></div>
-                <div class="card">Cooler<img src="cooler.jpg" alt="Cooler" style="width:100%;border-radius:10px;"></div>
-                <div class="card">Press (Iron)<img src="iron.jpg" alt="Iron Press" style="width:100%;border-radius:10px;"></div>
-                <div class="card">Induction<img src="induction.jpg" alt="Induction Cooktop" style="width:100%;border-radius:10px;"></div>
-            </div>
-        </div>
-    </section>
+<section id="products">
+<h2 class="section-title">Our Products</h2>
 
-    <section id="contact">
-        <div class="container">
-            <h2>Contact</h2>
-            <p>Ajeetpur Holi Bala Mandir, Rampur, Uttar Pradesh</p>
-            <p>Phone: <a href="tel:+917817849082">+91 7817849082</a></p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1400.5!2d79.44!3d28.80!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399f000000000001%3A0x0000000000000000!2sAjeetpur%20Holi%20Bala%20Mandir%2C%20Rampur!5e0!3m2!1sen!2sin!4v1730000000000" allowfullscreen="" loading="lazy"></iframe>
-            <form style="max-width:500px;margin-top:2rem;">
-                <input type="text" placeholder="Name" style="width:100%;padding:10px;margin:5px 0;border:1px solid #ddd;border-radius:5px;">
-                <input type="tel" placeholder="Phone" style="width:100%;padding:10px;margin:5px 0;border:1px solid #ddd;border-radius:5px;">
-                <textarea placeholder="Query: Repair/Sales?" style="width:100%;padding:10px;margin:5px 0;border:1px solid #ddd;border-radius:5px;height:100px;"></textarea>
-                <button type="submit" class="cta-btn" style="width:100%;">Send Message</button>
-            </form>
-        </div>
-    </section>
+<div class="grid">
 
-    <a href="https://wa.me/917817849082?text=Hi from Yadav Electronics site!" class="whatsapp-float" target="_blank">💬</a>
-    <a href="tel:+917817849082" class="call-float">📞 Call</a>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1581579185169-5b6a8f7bd6a0">
+<h3>Refrigerator</h3>
+<p>Single Door & Double Door Models Available</p>
+</div>
 
-    <footer>
-        <p>&copy; 2026 Yadav Electronics. Rampur, UP. Home Appliances Specialist.</p>
-    </footer>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1606813909359-0a1c2d99b040">
+<h3>Washing Machine</h3>
+<p>Semi & Fully Automatic Machines</p>
+</div>
 
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault(); document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
-            });
-        });
-    </script>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1596181095619-2a6e7a3a8680">
+<h3>LED TV</h3>
+<p>26", 32", 43" & More Sizes Available</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc">
+<h3>Air Cooler</h3>
+<p>Desert & Personal Coolers</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1585238342028-4e6e0c0b5d6e">
+<h3>Mixer Juicer</h3>
+<p>Powerful Motor & Durable Blades</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1586201375761-83865001e31c">
+<h3>Electric Press</h3>
+<p>Lightweight & Heavy Press Available</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1581091012184-7c0f8a4b1a4c">
+<h3>Induction Cooktop</h3>
+<p>Energy Efficient & Safe Cooking</p>
+</div>
+
+</div>
+</section>
+
+<section id="contact">
+<h2 class="section-title">Contact Us</h2>
+<p>📍 Ajeetpur Holi Bala Mandir, Rampur</p>
+<p>📞 +91 7817849082</p>
+
+<iframe 
+src="https://www.google.com/maps?q=Ajeetpur%20Holi%20Bala%20Mandir%20Rampur&output=embed"
+width="100%" height="250" style="border:0;"></iframe>
+
+</section>
+
+<footer>
+© 2026 Yadav Electronics | All Rights Reserved
+</footer>
+
+<a href="https://wa.me/917817849082" class="whatsapp">💬</a>
+<a href="tel:+917817849082" class="call">📞</a>
+
 </body>
-        </html>
+                                                             </html>
