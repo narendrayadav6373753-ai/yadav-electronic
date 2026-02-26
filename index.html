@@ -1,155 +1,320 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yadav Electronics | Best Electronics Store in Rampur</title>
 
-<title>Yadav Electronics | Best Electronics Shop in Rampur</title>
-
-<meta name="description" content="Yadav Electronics is the best electronics shop in Rampur. Buy Refrigerator, Washing Machine, LED TV, Cooler, Mixer, Press and Induction at best price. EMI Available.">
-
-<meta name="keywords" content="Electronics Shop in Rampur, Refrigerator Dealer Rampur, Washing Machine Shop Ajeetpur, LED TV Shop Rampur, Yadav Electronics">
-
-<meta name="author" content="Yadav Electronics">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
 
 body{
-margin:0;
-font-family:Arial, sans-serif;
-background:#f5f7fa;
+    background:#f4f9f9;
+    color:#222;
 }
 
+/* Navbar */
 header{
-background:#0d47a1;
-color:white;
-padding:15px 20px;
-display:flex;
-justify-content:space-between;
-align-items:center;
+    background:linear-gradient(90deg,#0f9b8e,#0077b6);
+    padding:15px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    color:#fff;
 }
 
-header h2{
-margin:0;
+header h1{
+    font-size:22px;
+    font-weight:600;
 }
 
+nav a{
+    color:#fff;
+    text-decoration:none;
+    margin-left:20px;
+    font-weight:500;
+}
+
+nav a:hover{
+    opacity:0.8;
+}
+
+/* Hero Section */
 .hero{
-background:#00c853;
-color:white;
-text-align:center;
-padding:35px 20px;
+    height:90vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+    url('https://images.unsplash.com/photo-1581090700227-4c4f50d0c9f6');
+    background-size:cover;
+    background-position:center;
+    color:#fff;
+    padding:20px;
 }
 
-.hero h1{
-margin:10px 0;
-font-size:24px;
+.hero h2{
+    font-size:42px;
+    margin-bottom:20px;
 }
 
+.hero p{
+    margin-bottom:25px;
+    font-size:18px;
+}
+
+.btn{
+    padding:12px 25px;
+    margin:10px;
+    border:none;
+    cursor:pointer;
+    font-size:16px;
+    border-radius:30px;
+    transition:0.3s;
+}
+
+.btn-primary{
+    background:#00b4d8;
+    color:#fff;
+}
+
+.btn-primary:hover{
+    background:#0096c7;
+}
+
+.btn-secondary{
+    background:#2ecc71;
+    color:#fff;
+}
+
+.btn-secondary:hover{
+    background:#27ae60;
+}
+
+/* Sections */
+section{
+    padding:60px 8%;
+}
+
+section h3{
+    text-align:center;
+    font-size:30px;
+    margin-bottom:40px;
+    color:#0077b6;
+}
+
+/* Products */
 .products{
-padding:25px 20px;
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
-gap:15px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
 }
 
 .card{
-background:white;
-padding:12px;
-text-align:center;
-border-radius:8px;
-box-shadow:0 2px 8px rgba(0,0,0,0.1);
+    background:#fff;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
 }
 
 .card img{
-width:100%;
-height:120px;
-object-fit:cover;
-border-radius:6px;
+    width:100%;
+    height:200px;
+    object-fit:cover;
 }
 
-.card h3{
-margin:10px 0 5px 0;
-font-size:16px;
+.card-content{
+    padding:20px;
+}
+
+.card-content h4{
+    margin-bottom:10px;
+    color:#0f9b8e;
+}
+
+/* Why Choose Us */
+.why{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:30px;
+    text-align:center;
+}
+
+.why div{
+    background:#fff;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+/* Contact */
+.contact{
+    text-align:center;
+}
+
+iframe{
+    width:100%;
+    height:300px;
+    border:0;
+    margin-top:20px;
+    border-radius:15px;
+}
+
+/* WhatsApp Button */
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:#fff;
+    padding:15px 18px;
+    border-radius:50%;
+    font-size:22px;
+    text-decoration:none;
+    box-shadow:0 4px 10px rgba(0,0,0,0.3);
 }
 
 footer{
-background:#0d47a1;
-color:white;
-text-align:center;
-padding:15px;
-font-size:14px;
+    background:#0077b6;
+    color:#fff;
+    text-align:center;
+    padding:15px;
+    margin-top:40px;
 }
 
-button{
-background:#00c853;
-border:none;
-padding:8px 14px;
-color:white;
-border-radius:5px;
-cursor:pointer;
+/* Responsive */
+@media(max-width:768px){
+    .hero h2{
+        font-size:28px;
+    }
 }
-
 </style>
 </head>
-
 <body>
 
 <header>
-<h2>Yadav Electronics</h2>
-<button onclick="window.location.href='tel:+917817849082'">Call Now</button>
+    <h1>Yadav Electronics</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+    </nav>
 </header>
 
+<!-- Hero -->
 <section class="hero">
-<h1>Best Electronics Shop in Rampur</h1>
-<p>Refrigerator | Washing Machine | LED TV | Cooler | Mixer | Press | Induction</p>
-<button onclick="window.location.href='tel:+917817849082'">Contact Now</button>
+    <h2>Best Electronics Store in Rampur</h2>
+    <p>Quality Products | Affordable Prices | Trusted Service</p>
+    <a href="tel:+917817849082"><button class="btn btn-primary">Call Now</button></a>
+    <a href="#contact"><button class="btn btn-secondary">Visit Store</button></a>
 </section>
 
-<section class="products">
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1586201375761-83865001e31c" alt="Refrigerator in Rampur">
-<h3>Refrigerator</h3>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1598514982841-21df0c5ef3e3" alt="Washing Machine Shop Rampur">
-<h3>Washing Machine</h3>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1593784991095-a205069470b6" alt="LED TV Shop in Rampur">
-<h3>LED TV</h3>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1626808642875-0aa545482dfb" alt="Air Cooler in Rampur">
-<h3>Air Cooler</h3>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1626808642723-d5f1d88ef1b1" alt="Mixer Shop Rampur">
-<h3>Mixer</h3>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952" alt="Electric Press Rampur">
-<h3>Press</h3>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1606813909353-56f9f89e27c5" alt="Induction Stove Rampur">
-<h3>Induction</h3>
-</div>
-
+<!-- About -->
+<section id="about">
+    <h3>About Us</h3>
+    <p style="text-align:center; max-width:800px; margin:auto;">
+        Yadav Electronics is a trusted local electronics shop located at Ajeetpur Holi Bala Mandir, Rampur, Uttar Pradesh.
+        We provide high-quality electronic products at affordable prices with complete customer satisfaction.
+        Our goal is to deliver genuine products and reliable service to every customer.
+    </p>
 </section>
+
+<!-- Products -->
+<section id="products">
+    <h3>Our Products</h3>
+    <div class="products">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1">
+            <div class="card-content">
+                <h4>LED TVs</h4>
+                <p>Smart and HD LED TVs with latest features.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c">
+            <div class="card-content">
+                <h4>Refrigerators</h4>
+                <p>Energy-efficient refrigerators for every home.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1604335399105-a0c585fd81a1">
+            <div class="card-content">
+                <h4>Washing Machines</h4>
+                <p>Top-load & front-load washing machines available.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952">
+            <div class="card-content">
+                <h4>Air Coolers</h4>
+                <p>Powerful cooling solutions for summer.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1598514982891-6a6b4c1a1d52">
+            <div class="card-content">
+                <h4>Electric Irons</h4>
+                <p>Durable and fast-heating electric irons.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1615874959474-d609969a8a47">
+            <div class="card-content">
+                <h4>Induction Cooktops</h4>
+                <p>Modern induction cooktops for safe cooking.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Why Choose Us -->
+<section>
+    <h3>Why Choose Us</h3>
+    <div class="why">
+        <div><h4>Affordable Prices</h4><p>Best deals and discounts available.</p></div>
+        <div><h4>Genuine Products</h4><p>100% original branded electronics.</p></div>
+        <div><h4>Easy EMI Options</h4><p>Flexible EMI payment support.</p></div>
+        <div><h4>Customer Support</h4><p>Friendly and reliable service.</p></div>
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="contact">
+    <h3>Contact Us</h3>
+    <p><strong>Phone:</strong> +91 7817849082</p>
+    <p><strong>Address:</strong> Ajeetpur Holi Bala Mandir, Rampur, Uttar Pradesh</p>
+
+    <iframe src="https://maps.google.com/maps?q=Rampur%20Uttar%20Pradesh&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+</section>
+
+<a class="whatsapp" href="https://wa.me/917817849082" target="_blank">💬</a>
 
 <footer>
-Yadav Electronics <br>
-Ajeetpur Holi Bala Mandir, Rampur, Uttar Pradesh <br>
-📞 +91 7817849082
+    © 2026 Yadav Electronics | All Rights Reserved
 </footer>
 
 </body>
-</html>
+                                                               </html>
